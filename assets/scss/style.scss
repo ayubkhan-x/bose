@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Net-SF-Pro-Rounded';
+    src: url('../fonts/Net-SF-Pro-Rounded/FontsFree-Net-SF-Pro-Rounded-Regular.ttf');
+}
+
+// Colors
+$main: #fff;
+$main_second:#000;
+
+// Fonts
+$montserrat: 'Montserrat';
+$poppins: 'Poppins';
+$rounded: 'Net-SF-Pro-Rounded';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
