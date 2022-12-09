@@ -52,3 +52,88 @@ li {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+// Header
+.header {
+    background-color: $main_second; 
+    padding: 76px 50px 0px 50px;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $montserrat;
+    font-weight: 700;
+    font-size: 16px;
+
+   
+    &__btn {
+        width: 170px;
+        height: 35px;
+        background: #202020;
+        border-radius: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main;
+        cursor: pointer;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 153px;
+        margin-bottom: 54px;
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        &_link {
+            color: $main;
+        }
+    }
+}
+
+// First
+.first {
+    background-color: $main_second;
+    height: 606px;
+
+    &__df {
+        display: flex;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-top: 166px;
+
+        &_title {
+            font-family: $poppins;
+            font-weight: 800;
+            font-size: 45px;
+            text-align: center;
+            color: $main;
+            margin-left: 32px;
+        }
+    }
+    &__btn {
+        width: 274px;
+        height: 61px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(234, 232, 232, 0.5);
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: $montserrat;
+        font-weight: 700;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $main_second;
+        text-transform: uppercase;
+        margin-left: 52px;
+    }
+}
+   
