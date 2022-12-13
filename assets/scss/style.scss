@@ -3,26 +3,31 @@
     src: url('../fonts/Montserrat/static/Montserrat-Bold.ttf');
     font-weight: 700;
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins/Poppins-Medium.ttf');
     font-weight: 500;
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
     font-weight: 600;
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins/Poppins-Bold.ttf');
     font-weight: 700;
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
     font-weight: 800;
 }
+
 @font-face {
     font-family: 'Net-SF-Pro-Rounded';
     src: url('../fonts/Net-SF-Pro-Rounded/FontsFree-Net-SF-Pro-Rounded-Regular.ttf');
@@ -30,7 +35,7 @@
 
 // Colors
 $main: #fff;
-$main_second:#000;
+$main_second: #000;
 
 // Fonts
 $montserrat: 'Montserrat';
@@ -42,12 +47,15 @@ $rounded: 'Net-SF-Pro-Rounded';
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 li {
     list-style: none;
 }
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -55,9 +63,10 @@ li {
 
 // Header
 .header {
-    background-color: $main_second; 
+    background-color: $main_second;
     padding: 76px 50px 0px 50px;
 }
+
 .heading {
     display: flex;
     justify-content: space-between;
@@ -66,7 +75,7 @@ li {
     font-weight: 700;
     font-size: 16px;
 
-   
+
     &__btn {
         width: 170px;
         height: 35px;
@@ -84,11 +93,13 @@ li {
         display: flex;
         gap: 153px;
         margin-bottom: 54px;
+
         ul {
             display: flex;
             align-items: center;
             gap: 20px;
         }
+
         &_link {
             color: $main;
         }
@@ -103,6 +114,7 @@ li {
     &__df {
         display: flex;
     }
+
     &__info {
         display: flex;
         align-items: center;
@@ -117,6 +129,7 @@ li {
             margin-left: 32px;
         }
     }
+
     &__btn {
         width: 274px;
         height: 61px;
@@ -136,4 +149,101 @@ li {
         margin-left: 52px;
     }
 }
-   
+
+// Second
+.second {
+    background-color: $main_second;
+
+    &__left {
+        margin-left: 35px;
+        padding-top: 217px;
+        color: $main;
+
+        &__title {
+            font-family: $poppins;
+            width: 543px;
+            font-weight: 700;
+            font-size: 64px;
+        }
+
+        &_colors {
+            &_title {
+                margin-top: 24px;
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 16px;
+            }
+
+            &_items {
+                display: flex;
+                gap: 6px;
+                margin-top: 20px;
+
+                &_wrap {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: column;
+                }
+            }
+
+            &_item {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+
+                &_silver {
+                    background: #666666;
+                }
+
+                &_yellow {
+                    background: #FEB554;
+                }
+
+                &_grey {
+                    background: #606651;
+                }
+
+                &_pink {
+                    background: #C56A72;
+                }
+            }
+
+            &_name {
+                font-family: $poppins;
+                font-weight: 900;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+
+        &_footer {
+            display: flex;
+            align-items: center;
+            margin-top: 33px;
+
+            &_price {
+                font-family: $rounded;
+                font-weight: 700;
+                font-size: 36px;
+            }
+
+            &_btn {
+                width: 190px;
+                height: 48px;
+                background: #FFFFFF;
+                border-radius: 50px;
+                font-family: $poppins;
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: $main_second;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
